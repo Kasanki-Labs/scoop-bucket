@@ -1,0 +1,29 @@
+{
+    "version": "0.1.0",
+    "description": "Record, replay, test and fix safe AI agents. By Kasanki Labs.",
+    "homepage": "https://helium-solo.pages.dev",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://github.com/Kasanki-Labs/helium-releases/blob/main/TERMS.txt"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Kasanki-Labs/helium-releases/releases/download/v0.1.0/helium-solo-0.1.0-windows-x64.zip",
+            "hash": "4b8443dffa6cc3e9be3b7d5edffb72c20ab36cd303f25b499dc6640f37e3cc4b"
+        }
+    },
+    "bin": [
+        "helium.exe",
+        ["helium.exe", "helium-solo"]
+    ],
+    "checkver": {
+        "github": "https://github.com/Kasanki-Labs/helium-releases"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Kasanki-Labs/helium-releases/releases/download/v$version/helium-solo-$version-windows-x64.zip"
+            }
+        }
+    }
+}
